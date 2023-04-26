@@ -30,11 +30,11 @@ class DataTransformation:
             logging.info('Data Transformation initiated')
                     
             
-            # Define which columns should be ordinal-encoded and which should be scaled
+            # Define which columns should be onehot-encoded and which should be scaled
             numerical_cols=["age","fnlwgt","capital_gain","capital_loss","hours_per_week"]
             category_cols=["workclass","education","education_num","marital_status","occupation","relationship","race","sex","native_country"]
             
-            # Define the custom ranking for each ordinal variable
+            # Define onehot encoded variable
             workclass_cat=[' State-gov', ' Self-emp-not-inc', ' Private', ' Federal-gov',' Local-gov', ' others', ' Self-emp-inc', ' Without-pay', ' Never-worked']
             education_cat=[' Bachelors', ' HS-grad', ' 11th', ' Masters', ' 9th',' Some-college', ' Assoc-acdm', ' Assoc-voc', ' 7th-8th',' Doctorate', ' Prof-school', ' 5th-6th', ' 10th', ' 1st-4th',' Preschool', ' 12th']
             education_num_cat=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
